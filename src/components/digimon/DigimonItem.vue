@@ -24,6 +24,9 @@ const { digimon } = defineProps({
   align-items: center;
   padding: 8px;
   background: #fff;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
 }
 .digimon-img {
   width: 100%;
