@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="digimon-root">
     <DigimonFilter :levels="levels" @filter="onFilter" />
 
     <div v-if="loading">Cargando Digimons...</div>
@@ -59,6 +59,10 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+.digimon-root {
+  padding: 8px 12px; /* espacio lateral extra */
+  margin-top: 14px; /* separa el filtro/header del listado */
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
